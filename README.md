@@ -2,7 +2,7 @@
 
 A shared whiteboard. Everyone who opens the same `?room=` link draws on the same canvas live, with cursors, names, and presence.
 
-- **Live:** https://mayawalsh19-art.github.io/multiplayer-poc/
+- **Live:** https://mayawalsh19-art.github.io/multiplayer-poc/?room=class
 - **Stack:** Vite + React + `tldraw` + `@tldraw/sync` (`useSyncDemo`, which uses tldraw's hosted demo sync server)
 - **Deploy:** push to `main` and GitHub Actions builds it and publishes to Pages
 

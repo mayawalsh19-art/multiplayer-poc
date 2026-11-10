@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci && npm run build
+        env:
+          VITE_TLDRAW_LICENSE_KEY: ${{ vars.TLDRAW_LICENSE_KEY }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }

@@ -58,6 +58,10 @@ export default function App() {
   // Prefix keeps us out of other people's rooms on tldraw's shared demo server.
   const store = useSyncDemo({ roomId: `mw-multiplayer-poc-${room}` })
   return (
-    <Tldraw store={store} components={components} />
+    <Tldraw
+      store={store}
+      components={components}
+      licenseKey={import.meta.env.VITE_TLDRAW_LICENSE_KEY}
+    />
   )
 }
